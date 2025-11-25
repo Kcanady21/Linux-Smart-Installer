@@ -6,7 +6,7 @@ Built for **Fedora Linux with KDE Plasma**, but should work on any Linux distrib
 
 ## Why?
 
-Some applications (like Minecraft, CurseForge, or various AppImage alternatives) are only distributed as `.tar.gz` or `.tar.xz` archives. Installing these manually means:
+Some applications are only distributed as `.tar.gz` or `.tar.xz` archives. Installing these manually means:
 
 - Extracting to the right location
 - Setting executable permissions
@@ -167,6 +167,8 @@ smart-uninstall.sh --list
 # Remove it
 smart-uninstall.sh --remove testapp
 ```
+## Known Bugs
+   1. "smart-uninstall.sh --list" in the terminal will return a blank list even when apps have been installed through the smart installer. However, "typing smart-install.sh" will display a gui that does properly show the apps installed via this method and can be easily uninstalled there.
 
 ## Contributing
 
