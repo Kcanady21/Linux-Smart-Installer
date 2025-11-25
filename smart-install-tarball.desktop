@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/x-compressed-tar;application/x-xz-compressed-tar;application/gzip;application/x-tar;application/x-gzip;
+Actions=smartinstall
+X-KDE-StartupNotify=false
+X-KDE-Priority=TopLevel
+
+[Desktop Action smartinstall]
+Name=Smart Install
+Icon=package-x-generic
+Exec=sh -c '"$HOME/.local/bin/smart-install.sh" "%f"'
